@@ -8,177 +8,154 @@
     <meta name="description" content="Animate carousel" />
     <meta name="author" content="David Deutsch" />
     <title>陳揚記</title>
-    <link rel="stylesheet" href="./css/docs.theme.min.css" />
-    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="./css/cover.css" />
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
     <link rel="shortcut icon" href="favicon.ico" />
-
-    <!-- Yeah i know js should not be in header. Its required for demos.-->
-
-    <!-- javascript -->
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/owl.carousel.min.js"></script>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/cover.css" rel="stylesheet" />
   </head>
   <body>
-    <!--  Demos -->
-    <section id="demos">
-      <div>
-        <div class="fadeOut owl-carousel owl-theme">
-          <div class="item item_cover">
-            <img src="./img/cover_people.png" />
-            <p>(右滑閱讀)</p>
-          </div>
-          <div class="item">
-            <img src="./img/0001.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0002.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0004.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0005.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0006.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0010.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0011.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0012.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0014.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0018.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0019.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0020.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0021.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0022.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0023.png" />
-          </div>
-
-          <div class="item">
-            <img src="./img/0024.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0028.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0029.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0030.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0031.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0032.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0033.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0034.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0038.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0039.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0040.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0041.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0042.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0043.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0044.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0048.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0049.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0050.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0051.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0052.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0053.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0054.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0055.png" />
-          </div>
-          <div class="item">
-            <img src="./img/0056.png" />
-          </div>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/cover.gif" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/0001.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/0002.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0004.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0005.png" class="d-block" />
         </div>
 
-        <link rel="stylesheet" href="../assets/css/animate.css" />
-        <script>
-          jQuery(document).ready(function ($) {
-            $(".fadeOut").owlCarousel({
-              items: 1,
-              animateOut: "fadeOut",
-              loop: true,
-              margin: 10,
-              dots: false,
-            });
-            $(".custom1").owlCarousel({
-              animateOut: "slideOutDown",
-              animateIn: "flipInX",
-              items: 1,
-              margin: 30,
-              stagePadding: 30,
-              smartSpeed: 450,
-              dots: false,
-            });
-          });
-        </script>
+        <div class="carousel-item">
+          <img src="/img/0006.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0010.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0011.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0012.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0014.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0018.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0019.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0020.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0021.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0022.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0023.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0024.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0028.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0029.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0030.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0031.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0032.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0033.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0034.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0038.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0039.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0040.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0041.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0042.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0043.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0044.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0048.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0049.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0050.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0051.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0052.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0053.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0054.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0055.png" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/0056.png" class="d-block" />
+        </div>
       </div>
-    </section>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
